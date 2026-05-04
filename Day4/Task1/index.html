@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    //write a js code that converts the first letter of each word of string in upper case 
+    /* var text = "the quick brown fox"
+     var newText = text.split(" ")
+         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+         .join(" ");
+     console.log(newText)*/
+    //======================================//
+    //write a js code that finds the longest word within the string
+    let text = "Web Development Tutorials";
+
+    //trim ==> to remove any space in the word 
+    //split ==> to divide it to array of words text=["Web","Development","Tutorials"]
+    let words = text.trim().split(" ");
+    let longest = "";
+
+    for (let word of words) {
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    }
+
+    console.log(longest);
+
+    
+</script>
+
+<body>
+
+
+
+</body>
+
+</html>
