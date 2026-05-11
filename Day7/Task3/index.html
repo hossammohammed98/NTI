@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Move Elements Between Boxes</h1>
+    <div class="container">
+        <div class="left-card">
+            <p>Available</p>
+            <div class="elements">
+                <div class="item">HTML</div>
+                <div class="item">CSS</div>
+                <div class="item">JavaScript</div>
+                <div class="item">React</div>
+            </div>
+        </div>
+        <div class="middle">
+            <button class="btn btn-move" id="moveBtn">→Move</button>
+            <br>
+            <button class="btn btn-back" id="backBtn">← Back</button>
+        </div>
+        <div class="right-card" id="selectedBox">
+            <p>Selected</p>
+            <div class="elements"></div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

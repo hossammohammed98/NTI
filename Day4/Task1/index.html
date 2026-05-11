@@ -16,6 +16,7 @@
      console.log(newText)*/
     //======================================//
     //write a js code that finds the longest word within the string
+    /*
     let text = "Web Development Tutorials";
 
     //trim ==> to remove any space in the word 
@@ -30,8 +31,37 @@
     }
 
     console.log(longest);
+*/
+    var text = prompt("Enter Your Text, Please");
 
-    
+    if (!text || text.trim() === "" || !isNaN(text)) {
+        alert("Enter A Valid Text");
+    } else {
+        var words = text.trim().split(" ");
+        var result = "";
+
+        for (var i = 0; i < words.length; i++) {
+            var cleanedWord = "";
+
+            // remove numbers from word
+            for (var k = 0; k < words[i].length; k++) {
+                if (isNaN(parseInt(words[i][k]))) {
+                    cleanedWord += words[i][k];
+                }
+            }
+
+            // capitalize first letter
+            if (cleanedWord.length > 0) {
+                var finalWord =
+                    cleanedWord[0].toUpperCase() +
+                    cleanedWord.slice(1);
+
+                result += " " + finalWord;
+            }
+        }
+
+        alert(result.trim());
+    }
 </script>
 
 <body>
