@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #d9d9d98a;
+}
+.card {
+  width: 52%;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: auto;
+}
+.card-title h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.card-form input {
+  padding: 7px;
+}
+.card .btn {
+  padding: 8px;
+  margin-left: 6px;
+  color: whitesmoke;
+  background-color: green;
+  border: 1px solid;
+  border-radius: 8px;
+}
+.card .btn:hover {
+  background-color: rgba(0, 128, 0, 0.704);
+  cursor: pointer;
+}
+/* table */
+.table {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #333333;
+  color: whitesmoke;
+  margin-top: 10px;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.table th,
+td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+/* button edit - delete */
+button {
+  border: none;
+  padding: 8px 14px;
+  margin-left: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
