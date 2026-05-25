@@ -1,0 +1,95 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background: #f8fafc; /* light clean background */
+}
+
+/* TEXT */
+.heroText {
+  max-width: 500px;
+}
+
+.heroText h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0f172a; /* dark navy for strong contrast */
+}
+
+.heroText span {
+  color: #2563eb; /* clean modern blue */
+}
+
+.heroText p {
+  margin-top: 15px;
+  color: #64748b; /* softer gray for readability */
+}
+
+/* BUTTONS */
+.heroButtons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.serviceBtn {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.serviceBtn:hover {
+  background: #1d4ed8;
+}
+
+.aboutBtn {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.aboutBtn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* IMAGE SECTION */
+.heroImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* background circle */
+.circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #2563eb;
+  border-radius: 50%;
+  opacity: 0.12;
+}
+
+/* wrapper for next/image */
+.imageWrapper {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* next/image */
+.image {
+  object-fit: cover;
+}
