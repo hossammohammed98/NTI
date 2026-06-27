@@ -1,0 +1,20 @@
+├── config/
+│   └── db.js
+├── models/
+│   ├── User.js
+│   └── Post.js
+├── validation/
+│   ├── user.validation.js
+│   └── post.validation.js
+├── middlewares/
+│   ├── auth.middleware.js
+│   └── error.middleware.js
+├── controllers/
+│   ├── auth.controller.js
+│   └── post.controller.js
+├── routes/
+│   ├── auth.routes.js
+│   └── post.routes.js
+├── .env
+├── app.js
+└── server.js

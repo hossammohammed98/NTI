@@ -1,0 +1,9 @@
+{
+  "user": {
+    "id": 1,
+    "name": "Hossam",
+    "email": "hossam@example.com",
+    "isActive": true,
+    "skills": ["HTML", "CSS", "JavaScript", "React"]
+  }
+}
