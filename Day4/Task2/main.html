@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+        let str = prompt("enter the text");
+        let allowed = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        let result = "";
+
+        for (let char of str) {
+            if (allowed.includes(char)) {
+                result += char;
+            }
+        }
+
+        console.log(result); // Hello123World
+    </Script>
+</head>
+
+<body>
+
+</body>
+
+</html>

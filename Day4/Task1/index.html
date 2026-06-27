@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    //write a js code that converts the first letter of each word of string in upper case 
+    /* var text = "the quick brown fox"
+     var newText = text.split(" ")
+         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+         .join(" ");
+     console.log(newText)*/
+    //======================================//
+    //write a js code that finds the longest word within the string
+    /*
+    let text = "Web Development Tutorials";
+
+    //trim ==> to remove any space in the word 
+    //split ==> to divide it to array of words text=["Web","Development","Tutorials"]
+    let words = text.trim().split(" ");
+    let longest = "";
+
+    for (let word of words) {
+        if (word.length > longest.length) {
+            longest = word;
+        }
+    }
+
+    console.log(longest);
+*/
+    var text = prompt("Enter Your Text, Please");
+
+    if (!text || text.trim() === "" || !isNaN(text)) {
+        alert("Enter A Valid Text");
+    } else {
+        var words = text.trim().split(" ");
+        var result = "";
+
+        for (var i = 0; i < words.length; i++) {
+            var cleanedWord = "";
+
+            // remove numbers from word
+            for (var k = 0; k < words[i].length; k++) {
+                if (isNaN(parseInt(words[i][k]))) {
+                    cleanedWord += words[i][k];
+                }
+            }
+
+            // capitalize first letter
+            if (cleanedWord.length > 0) {
+                var finalWord =
+                    cleanedWord[0].toUpperCase() +
+                    cleanedWord.slice(1);
+
+                result += " " + finalWord;
+            }
+        }
+
+        alert(result.trim());
+    }
+</script>
+
+<body>
+
+
+
+</body>
+
+</html>

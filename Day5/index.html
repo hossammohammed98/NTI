@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        const arr = [45, 12, 78, 12, 67, 45, 3, 56, 89, 23, 67];
+        //asc
+        arr.sort(function (a, b) {
+            return a - b;
+        })
+        console.log(arr)
+        //=======================//
+        //desc
+        function sortDesc() {
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length - 1; j++) {
+                    if (arr[j] < arr[j + 1]) {
+                        // switch
+                        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+                    }
+                }
+            }
+            console.log(arr); // [9, 7, 5, 2, 1]
+        }
+        sortDesc()
+        //=============================================
+        /*2- filter array to get nums greater than 50 using filter and arrow fun other 
+        once using user defined object */
+
+        let res = arr.filter(function (e) {
+            if (e > 50) {
+                return e
+            }
+        })
+        console.log(res)
+        //========================================
+        //get min and max using 3 diffrent ways 
+        function dothing() {
+            console.log(Math.min(...arr))
+            console.log(Math.max(...arr)
+            )
+        }
+        dothing()
+        //==================find max ==============//
+        /*
+        let max = arr[0];
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        console.log(max);
+        console.log(min);*/
+
+        let max = arr.reduce((a, b) => {
+            if (a > b) {
+                return a;
+            } else {
+                return b;
+            }
+        });
+        console.log("==================================")
+        console.log(max);
+        let min = arr.reduce((a, b) => {
+            if (a < b) {
+                return a;
+            } else {
+                return b;
+            }
+        });
+        console.log(min)
+        //=========================================
+
+        //4- return New Array from this array with out Dublicates 
+        let newArr = [];
+        for (let z = 0; z < arr.length; z++) {
+            if (!newArr.includes(arr[z])) {
+                newArr.push(arr[z])
+            }
+        }
+        console.log(newArr)
+
+    </script>
+
+</body>
+
+</html>
